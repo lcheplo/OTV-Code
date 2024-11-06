@@ -1,9 +1,9 @@
 //Define Color Sensor Pins
-int S0 = 4;
-int S1 = 5;
-int S2 = 7;
-int S3 = 6;
-int out = 8;
+int S0 = A0;
+int S1 = A1;
+int S2 = A2;
+int S3 = A3;
+int out = A4;
 
 // Variables for Color Pulse Width Measurements
 int frequency = 0;
