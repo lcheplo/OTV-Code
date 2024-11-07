@@ -1,18 +1,18 @@
 //This code works with standard wheels
 
-// Motor Driver 1 (Front Left and Rear Left Motors)
-const int ENA = 9;  // PWM speed control for Left Motors
-const int IN1 = 2;  // Front Left Motor Forward
-const int IN2 = 3;  // Front Left Motor Backward
+// Motor Driver 1 (back motors)
+const int ENA = 9;  // PWM speed control for back Motors
+const int IN1 = 2;  // Back Right Motor Forward
+const int IN2 = 3;  // Back Right Motor Backward
 const int IN3 = 4;  // Rear Left Motor Forward
 const int IN4 = 5;  // Rear Left Motor Backward
 
-// Motor Driver 2 (Front Right and Rear Right Motors)
-const int ENB = 10; // PWM speed control for Right Motors
-const int IN5 = 6;  // Front Right Motor Forward
+// Motor Driver 2 (front motors)
+const int ENB = 10; // PWM speed control for front Motors
+const int IN5 = 6;  // Front left Motor Forward
 const int IN6 = 7;  // Front Right Motor Backward
-const int IN7 = 8;  // Rear Right Motor Forward
-const int IN8 = 11; // Rear Right Motor Backward
+const int IN7 = 8;  // front Right Motor Forward
+const int IN8 = 11; // front Right Motor Backward
 
 // Set speed
 const int motorSpeed = 100;
