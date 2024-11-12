@@ -5,7 +5,7 @@
 
 
 void setup() {
-    Enes100.begin("Simulator", FIRE, 3, 8, 9);
+    Enes100.begin("Simulator", Water, 3, 8, 9);
     Tank.begin();
    
     Enes100.println("Starting driving");
