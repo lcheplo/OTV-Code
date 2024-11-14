@@ -12,7 +12,7 @@ const int IN4 = 2;  // Rear Left Motor Backward
 
 // Motor Driver 2 (front motors)
 const int ENB = 12; // PWM speed control for front Motors
-const int END = 40; 
+const int END = 13; 
 const int IN5 = 11;  // Front left Motor Forward
 const int IN6 = 10;  // Front Right Motor Backward
 const int IN7 = 9;  // front Right Motor Forward
