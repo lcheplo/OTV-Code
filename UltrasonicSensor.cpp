@@ -1,8 +1,8 @@
 #include <Enes100.h>
 
 // Defines Ultrasonic pins
-int trig1=11;
-int echo1=10;
+int trig1=32;
+int echo1=34;
 
 //Defines Ultrasonic Variables 
 long timeInMicro1;
