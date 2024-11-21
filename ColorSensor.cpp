@@ -1,9 +1,9 @@
 //Define Color Sensor Pins
-int S0 = 14;
-int S1 = 15;
-int S2 = 16;
-int S3 = 17;
-int out = 18;
+int S0 = 26;
+int S1 = 27;
+int S2 = 28;
+int S3 = 29;
+int out = 30;
 
 // Variables for Color Pulse Width Measurements
 int frequency = 0;
@@ -80,33 +80,35 @@ void loop() {
   //Delay to stabilize sensor
   delay (100);
 
-
   //Attempt to determine pollutant colors
-  if (bluePW < redPW && bluePW < greenPW && bluePW < 400) {
+  if (bluePW < redPW && bluePW < greenPW) {
     Serial.println("Blue");
   }
 
   else if (redPW < bluePW && redPW < greenPW) {
 
+    if (redPW < bluePW && greenPW < bluePW) {
+      Serial.println("Yellow/Green");
+    }
 
+    else if (redPW < greenPW && bluePW < greenPW && redPW > 60) {
+      Serial.println("Purple");
+    }
+
+    else {
       Serial.println("Red");
-    
-  }
-
-  else if(redPW > 400 && bluePW > 400 && greenPW > 400){
-    Serial.println("Empty");
+    }
   }
 
 
   //write individual RGB values to Serial monitor
-  
   /*
     Serial.print("Red PW = ");
     Serial.print(redPW, DEC);
     Serial.print("- Green PW = ");
     Serial.print(greenPW, DEC);
     Serial.print("- Blue PW = ");
-    Serial.println(bluePW, DEC);*/
-  
+    Serial.println(bluePW, DEC);
+  */
 
 }
