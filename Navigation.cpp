@@ -39,15 +39,15 @@ void loop() {
 
 void moveForward() {
   // Enable the motors with forward direction
-  digitalWrite(IN1, HIGH);  // Front Left Motor Forward
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, HIGH);  // Rear Left Motor Forward
-  digitalWrite(IN4, LOW);
-  
-  digitalWrite(IN5, HIGH);  // Front Right Motor Forward
-  digitalWrite(IN6, LOW);
-  digitalWrite(IN7, HIGH);  // Rear Right Motor Forward
-  digitalWrite(IN8, LOW);
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
+      
+      digitalWrite(IN5, HIGH);
+      digitalWrite(IN6, LOW);
+      digitalWrite(IN8, LOW);
+      digitalWrite(IN7, HIGH);
   
   // Set motor speed
   analogWrite(ENA, motorSpeed);
